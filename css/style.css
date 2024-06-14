@@ -14,6 +14,10 @@ main {
     min-height: 100vh;
 }
 
+#my_select {
+    text-align: center;
+}
+
 
 #container{
     width: 80%;
@@ -22,10 +26,13 @@ main {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 /* Regole bottone */
+
 #click_me {
     max-width: 40%;
     margin: 0 auto;
+    padding: 10px;
     margin-bottom: 30px;
     text-align: center;
     background-color: blue;
@@ -35,11 +42,25 @@ main {
 
 /* regole quadratini */
 .square {
-    width: calc(100% / 10);
-    aspect-ratio: 1 / 1;
+
     border: 2px solid white;
     background-color: #011627;
     position: relative;
+}
+/* Diverse width per livelli */
+.cento {
+    width: calc(100% / 10);
+    aspect-ratio: 1 / 1;
+}
+
+.ottantuno {
+    width: calc(100% / 9);
+    aspect-ratio: 1 / 1;
+}
+
+.quarantanove {
+    width: calc(100% / 7);
+    aspect-ratio: 1 / 1;
 }
 
 .square span {
@@ -52,3 +73,4 @@ main {
 .azzur {
     background-color: #7fffd4;
 }
+
