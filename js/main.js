@@ -13,8 +13,17 @@ gameStart.addEventListener("click",
         // Selezione difficoltà
         const difficult = document.getElementById("select_level").value
         console.log(difficult)
-        // Creazione ciclo per genrare 100 blocchi
-        for (let i = 1; i < 101; i++){
+        let numBlock;
+        if (difficult === "cento"){
+            numBlock = 101
+        } else if (difficult === "ottantuno") {
+            numBlock = 82
+        } else if (difficult === "quarantanove") {
+            numBlock = 50
+        }
+
+        // Creazione ciclo per generare 100 blocchi
+        for (let i = 1; i < numBlock; i++){
             // Generazione square in pagina
             let divSquare = newElCl("div","square")
             divSquare.innerHTML = `<span>${i}</span>`
